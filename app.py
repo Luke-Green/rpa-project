@@ -21,7 +21,7 @@ while True:
         # print(os.listdir(directory))
         directory = single_input("Directory does not contain the required files, please try again.", mask=False, width=400, height=200)+'\\'
 
-  df1 = pd.read_excel(directory + 'ProductData.xlsx', sheet_name='Descriptions')
+df1 = pd.read_excel(directory + 'ProductData.xlsx', sheet_name='Descriptions')
 product_descriptions = {}
 
 for r, row in df1.iterrows():
